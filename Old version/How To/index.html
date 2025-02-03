@@ -1,0 +1,138 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>PHPVibe v4+ - Vimeo importer</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="PHPVibe.com">
+	<meta name="copyright" content="PHPVibe.com">
+
+	
+	<link rel="stylesheet" href="css/style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#008C9E;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#description">Description</a></li>		
+            <li><a href="#keys">Vimeo keys</a></li>			
+			<li><a href="#library_functions">Installation procedure</a></li>			
+			<li><a href="#further_information">Further Information</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright PHPVibe 2015<br>
+		
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Vimeo importer v3</h1><h2>for PHPVibe v4</h2><hr><ul><li>Created: 13/10/2013</li><li>By: phpRevolution.com</li><li><a href="http://www.phpvibe.com">Visit website</a></li></ul></section><section id="description">
+	<h3>Description</h3><hr class="notop">
+<p>
+	With the Vimeo Importer you can import videos from Vimeo to PHPVibe with no effort.</p>
+
+
+</section>
+<section id="keys">
+<h3>Vimeo Keys</h3><hr class="notop">
+<p>In order for this plugin to work you need to head to developer.vimeo.com and <a href="https://developer.vimeo.com/apps" target="_blank">register a new application </a>.<br />
+You will only need the:</p>
+
+<pre class="brush: plain">
+Client ID (Also known as Consumer Key or API Key)
+Client Secret (Also known as Consumer Secret or API Secret)
+</pre>
+<p>
+No upload permission is required.
+</p>
+<img src="assets/images/vimeo.jpg"/>
+<p></p>
+</section>
+
+<section id="library_functions">
+	<h3>Installation procedure</h3><hr class="notop">
+<h4>
+	Prepare upload</h4>
+<p>
+	Unpack the plugin to a folder on your hard drive.</p>
+	
+</p>
+
+<p>
+<strong>
+You can safly and fast install this plugin by simply uploading the files contained in /Upload this/ to the server.
+So, simply copy the entire content of the folder "/Upload this/" to your PHPVibe's root on server. 
+Exclude the folder "/Upload this/" just it's content. </p>
+and that's all...
+</strong>
+</p>
+
+<p> You should see now two links: <br>
+<br> Settings - > Vimeo Settings  (here you add the keys)<br>
+<br> Video importers -> Vimeo (this is the actual importer)
+.</p>
+
+<p> If you have any problems with cache, please open /moderator/vimeo.php and comment out/remove this two lines:.</p>
+	<pre class="brush: plain">
+$c_path = ADM.'/cache';
+$vimeo->enableCache(phpVimeo::CACHE_FILE,$c_path, 300);
+
+</pre>
+<p> If you want to make structural changes to the plugin, please follow the commented code at</p>
+	<pre class="brush: plain">
+moderator/vimeo.php
+
+</pre>
+</section>
+
+<section id="further_information">
+	<h3>Further Information</h3><hr class="notop">
+<p>
+	For further information about this mod visit:</p>
+<ul>
+	<li>
+		<a href="http://www.phpvibe.com">PHPVibe.com</a></li>
+	<li>
+		<a href="http://www.phpvibe.com/forum/">PHPVibe Forum</a></li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>
